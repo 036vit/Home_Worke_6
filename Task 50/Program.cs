@@ -8,9 +8,9 @@
 
 void PrintArray(int[,] matr)
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int i = 0; i < matr.GetLength(0); i++) // Перебираем строку
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int j = 0; j < matr.GetLength(1); j++) // Перебираем столбцы
  {
  Console.Write($"{matr[i, j]} ");
  }

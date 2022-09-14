@@ -16,9 +16,9 @@ double[,] matrix = new double[m, n]; //Инициализация массива
 
 void FillArray(double[,] matr) // Метод наполнения массива
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int i = 0; i < matr.GetLength(0); i++) // Перебор строк
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int j = 0; j < matr.GetLength(1); j++) // Перебор столбцов
  {
  matr[i,j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10; // Рандомно наполлняем вещественными числами
  }
@@ -27,11 +27,11 @@ void FillArray(double[,] matr) // Метод наполнения массива
 
 void PrintArray(double[,] matr) //Метод для выведения массива на экран построчно
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int i = 0; i < matr.GetLength(0); i++) // Перебор строк
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int j = 0; j < matr.GetLength(1); j++) // Перебор столбцов
  {
- Console.Write($"{matr[i, j]} ");
+ Console.Write($"{matr[i, j]} "); // Вывод числа с указанием позиции по [Номер строки, Номер столбца]
  }
  Console.WriteLine();
  }

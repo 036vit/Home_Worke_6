@@ -7,9 +7,9 @@
 
 void PrintArray(int[,] matr)
 {
- for (int i = 0; i < matr.GetLength(0); i++)
+ for (int i = 0; i < matr.GetLength(0); i++) // Перебираем строку
  {
- for (int j = 0; j < matr.GetLength(1); j++)
+ for (int j = 0; j < matr.GetLength(1); j++) // Перебираем столбцы
  {
  Console.Write($"{matr[i, j]} ");
  }
@@ -32,7 +32,7 @@ PrintArray(matrix);
 Console.WriteLine();
 
 double sum1 = 0;
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 5; i++) // Перебираем только строку до её окончания. Можно было и через длинну
 {
    
   {
@@ -40,10 +40,10 @@ for (int i = 0; i < 5; i++)
   }
 }
 
-  double Mean1 = Math.Round(sum1 / 5, 2);
+  double Mean1 = Math.Round(sum1 / 5, 2); // Округление до десятичной
 
 double sum2 = 0;
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 5; i++)  // Перебираем только строку до её окончания. Можно было и через длинну
 {
    
   {
@@ -51,10 +51,10 @@ for (int i = 0; i < 5; i++)
   }
 }
 
-  double Mean2 = Math.Round(sum2 / 5, 2);
+  double Mean2 = Math.Round(sum2 / 5, 2); // Округление до десятичной
 
 double sum3 = 0;
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 5; i++) // Перебираем только строку до её окончания. Можно было и через длинну
 {
    
   {
@@ -62,6 +62,6 @@ for (int i = 0; i < 5; i++)
   }
 }
 
-  double Mean3 = Math.Round(sum3 / 5, 2);
+  double Mean3 = Math.Round(sum3 / 5, 2); // Округление до десятичной
 
   Console.WriteLine($"Среднее арифметическое каждого столбца: {Mean1}; {Mean2}; {Mean3}");
